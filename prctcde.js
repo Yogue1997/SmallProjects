@@ -1,15 +1,8 @@
+let num  = document.getElementById('userInput').value
 
-const battle = function(){
-    if (uInput == cInput){
-        console.log("draw");
-    }else if (uInput > cInput){
-        console.log("You won");
-    }else if (uInput < cInput){
-        console.log("Computer Won");
-    }else{
-        console.log('Only from 0 - 2');
-    }
-}
+document.getElementsByClassName('submit').onclick = num.reduce((a,b) => a > b ? a : b);
+
+
 
 
 
